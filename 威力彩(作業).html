@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A區
+        function a(){
+            let numbers=[]
+            let n= 0
+            for (let i = 0; i < 6; i++) {
+                n= Math.floor(Math.random()*38)+1
+                while(numbers.includes(n)){
+                    n=Math.floor(Math.random()*38)+1
+                }
+                numbers.push(n)
+                document.write(n+'<br>')
+            }
+        }
+        
+        a()
+        // B區
+        document.write(Math.round(Math.random()*8+1))
+    </script>
+</body>
+</html>
